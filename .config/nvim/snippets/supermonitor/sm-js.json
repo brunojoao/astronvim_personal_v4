@@ -1,0 +1,15 @@
+{
+  "sm_js_storage_module_item": {
+    "prefix": ["sm_js_storage_module_item"],
+    "body": [
+      "storageModuleItem('<?= ${1:SYSTEM}; ?>', ${2:toggle}, ${3:item}, '${4:moduleName}', '${5:subModuleName}');"
+    ],
+    "description": "Supermonitor item storage toggle"
+  },
+
+  "sm_js_to_local_currency": {
+    "prefix": ["sm_js_to_local_currency"],
+    "body": ["toLocalCurrency(${1:value})"],
+    "description": "Supermonitor to local currency"
+  }
+}
