@@ -1,6 +1,6 @@
 return {
     "yuchanns/phpfmt.nvim",
-    lazy = false,
+    lazy = true,
     config = function()
         require("phpfmt").setup({
             -- Configurações padrão
