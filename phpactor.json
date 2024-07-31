@@ -3,10 +3,6 @@
         "class_new": {
             "variants": []
         },
-        "template_paths": [
-            "%project_config%/templates",
-            "%config%/templates"
-        ],
         "indentation": "    ",
         "refactor": {
             "generate_accessor": {
