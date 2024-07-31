@@ -8,7 +8,7 @@
 	"class_to_file.brute_force_conversion": true,
 	"code_transform.class_new.variants": [],
 	"code_transform.template_paths": [
-		"%project_config%/templates",
+		"%project_config%/phpactor_templates",
 		"%config%/templates"
 	],
 	"code_transform.indentation": "    ",
