@@ -1,0 +1,25 @@
+# Configuração principal do Phpactor cole isso em:
+# ~/config/phpactor/phpactor.yml
+extensions:
+  phpactor/extension-code-transformer:
+    get_and_set:
+      generate:
+        methods:
+          getter:
+            - 'get{property}'  # Define o formato do getter
+          setter:
+            - 'set{property}'  # Define o formato do setter
+      format:
+        getter:
+          method_prefix: 'get'  # Prefixo do método getter
+          property_suffix: ''   # Sufixo da propriedade do getter
+        setter:
+          method_prefix: 'set'  # Prefixo do método setter
+          property_suffix: ''   # Sufixo da propriedade do setter
+
+# Outras configurações específicas do Phpactor
+config:
+  # Adicione outras configurações específicas aqui, se necessário
+  # Por exemplo:
+  # phpactor:
+  #   some_other_config: value

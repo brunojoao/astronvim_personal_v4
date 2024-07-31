@@ -1,0 +1,29 @@
+{
+  "_comment": "Cole esse arquivo em ~/.config/phpactor/phpactor.json"
+  "extensions": {
+    "phpactor/extension-code-transformer": {
+      "get_and_set": {
+        "generate": {
+          "methods": {
+            "getter": [
+              "get{property}"
+            ],
+            "setter": [
+              "set{property}"
+            ]
+          }
+        },
+        "format": {
+          "getter": {
+            "method_prefix": "get",
+            "property_suffix": ""
+          },
+          "setter": {
+            "method_prefix": "set",
+            "property_suffix": ""
+          }
+        }
+      }
+    }
+  }
+}
