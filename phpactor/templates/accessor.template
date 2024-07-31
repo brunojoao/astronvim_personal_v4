@@ -1,4 +1,0 @@
-public function get{{ property }}()
-{
-    return $this->{{ property }};
-}
