@@ -1,0 +1,4 @@
+public function set{{ property }}(${{ property }})
+{
+    $this->{{ property }} = ${{ property }};
+}
