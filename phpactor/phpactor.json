@@ -17,8 +17,6 @@
 	"code_transform.refactor.generate_mutator.prefix": "set",
 	"code_transform.refactor.generate_mutator.upper_case_first": true,
 	"code_transform.refactor.generate_mutator.fluent": false,
-	"code_transform.refactor.generate_accessor.template": "accessor.template.twig",
-	"code_transform.refactor.generate_mutator.template": "mutator.template.twig",
 	"code_transform.import_globals": false,
 	"code_transform.refactor.object_fill.hint": false,
 	"code_transform.refactor.object_fill.named_parameters": false,
