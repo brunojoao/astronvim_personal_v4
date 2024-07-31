@@ -58,12 +58,9 @@
 	"worse_reflection.enable_cache": true,
 	"worse_reflection.cache_lifetime": 1,
 	"worse_reflection.enable_context_location": true,
-	"worse_reflection.cache_dir": "%cache%/worse-reflection",
-	"worse_reflection.stub_dir": "%application_root%/vendor/jetbrains/phpstorm-stubs",
 	"worse_reflection.diagnostics.undefined_variable.suggestion_levenshtein_disatance": 4,
 	"file_path_resolver.project_root": "/home/develop/.config/phpactor",
 	"file_path_resolver.app_name": "phpactor",
-	"file_path_resolver.application_root": "phar:///home/develop/.local/bin/phpactor",
 	"file_path_resolver.enable_cache": true,
 	"file_path_resolver.enable_logging": true,
 	"logging.enabled": false,
@@ -93,7 +90,7 @@
 		"completion_worse.completor.scf_class.enabled": false,
 		"completion_worse.completor.declared_class.enabled": false,
 		"completion_worse.completor.declared_constant.enabled": false,
-		"completion_worse.completor.declared_function.enabled": false,
+		"completion_worse.completor.declared_function.enabled": false
 	},
 	"language_server.method_alias_map": [],
 	"language_server.diagnostic_sleep_time": 1000,
@@ -107,7 +104,6 @@
 	"language_server.profile": false,
 	"language_server.trace": false,
 	"language_server.shutdown_grace_period": 200,
-	"language_server.phpactor_bin": "/home/develop/.local/bin/phpactor",
 	"language_server.self_destruct_timeout": 2500,
 	"language_server.diagnostic_outsource_timeout": 5,
 	"language_server_completion.trim_leading_dollar": false,
@@ -129,9 +125,6 @@
 		"/vendor/**/tests/**/*",
 		"/vendor/composer/**/*"
 	],
-	"indexer.stub_paths": [
-		"phar:///home/develop/.local/bin/phpactor/vendor/jetbrains/phpstorm-stubs"
-	],
 	"indexer.poll_time": 5000,
 	"indexer.buffer_time": 500,
 	"indexer.follow_symlinks": false,
@@ -139,24 +132,17 @@
 	"indexer.reference_finder.deep": true,
 	"indexer.implementation_finder.deep": true,
 	"indexer.supported_extensions": ["php", "phar"],
-	"object_renderer.template_paths.markdown": [
-		"%project_config%/templates/markdown",
-		"%config%/templates/markdown"
-	],
 	"language_server_phpstan.enabled": false,
-	"language_server_phpstan.bin": "%project_root%/vendor/bin/phpstan",
 	"language_server_phpstan.level": null,
 	"language_server_phpstan.config": null,
 	"language_server_phpstan.mem_limit": null,
 	"language_server_psalm.enabled": false,
-	"language_server_psalm.bin": "%project_root%/vendor/bin/psalm",
 	"language_server_psalm.show_info": true,
 	"language_server_psalm.use_cache": true,
 	"language_server_psalm.error_level": null,
 	"language_server_psalm.threads": 1,
 	"language_server_psalm.timeout": 15,
 	"language_server_php_cs_fixer.enabled": false,
-	"language_server_php_cs_fixer.bin": "%project_root%/vendor/bin/php-cs-fixer",
 	"language_server_php_cs_fixer.env": {
 		"XDEBUG_MODE": "off",
 		"PHP_CS_FIXER_IGNORE_ENV": true
@@ -164,7 +150,6 @@
 	"language_server_php_cs_fixer.show_diagnostics": true,
 	"language_server_php_cs_fixer.config": null,
 	"php_code_sniffer.enabled": false,
-	"php_code_sniffer.bin": "%project_root%/vendor/bin/phpcs",
 	"php_code_sniffer.env": {
 		"XDEBUG_MODE": "off"
 	},
@@ -174,10 +159,8 @@
 	"blackfire.enabled": false,
 	"prophecy.enabled": false,
 	"behat.enabled": false,
-	"behat.config_path": "%project_root%/behat.yml",
 	"behat.symfony.di_xml_path": null,
 	"symfony.enabled": false,
-	"symfony.xml_path": "%project_root%/var/cache/dev/App_KernelDevDebugContainer.xml",
 	"completion_worse.completor.symfony.enabled": true,
 	"public_services_only": false,
 	"phpunit.enabled": false,
