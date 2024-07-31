@@ -1,29 +1,28 @@
 {
-  "_comment": "Cole esse arquivo em ~/.config/phpactor/phpactor.json"
-  "extensions": {
-    "phpactor/extension-code-transformer": {
-      "get_and_set": {
-        "generate": {
-          "methods": {
-            "getter": [
-              "get{property}"
-            ],
-            "setter": [
-              "set{property}"
-            ]
-          }
+    "code_transform": {
+        "class_new": {
+            "variants": []
         },
-        "format": {
-          "getter": {
-            "method_prefix": "get",
-            "property_suffix": ""
-          },
-          "setter": {
-            "method_prefix": "set",
-            "property_suffix": ""
-          }
+        "template_paths": [
+            "%project_config%/templates",
+            "%config%/templates"
+        ],
+        "indentation": "    ",
+        "refactor": {
+            "generate_accessor": {
+                "prefix": "",
+                "upper_case_first": false
+            },
+            "generate_mutator": {
+                "prefix": "set",
+                "upper_case_first": true,
+                "fluent": false
+            }
+        },
+        "import_globals": false,
+        "object_fill": {
+            "hint": true,
+            "named_parameters": true
         }
-      }
     }
-  }
 }
